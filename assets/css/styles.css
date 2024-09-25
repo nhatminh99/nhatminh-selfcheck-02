@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.gradient-background {
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(circle at center, #4dbb9a, #fff);
+}
