@@ -673,3 +673,72 @@ a {
     line-height: 1.56;
     transition: 0.25s;
 }
+/* ========================================== Project ========================================== */
+.project {
+    margin-top: 148px;
+    padding-bottom: 63px;
+    background: #143c3c;
+}
+
+.project-top {
+    display: flex;
+    align-items: center;
+    padding-top: 116px;
+}
+
+.section-heading.project__heading::after {
+    background: #83a17d;
+}
+
+.project__heading {
+    width: 457px;
+    margin-right: 93px;
+    color: #e7f9f9;
+}
+
+.project-desc {
+    width: 570px;
+    height: 59px;
+    color: #6a8383;
+    font-family: "Public Sans";
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.56;
+}
+
+.project-link__cta {
+    margin-top: 13px;
+}
+
+.project-link {
+    margin-right: 26px;
+    color: #fff;
+    font-family: "Public Sans";
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.56;
+}
+
+video {
+    margin-top: 65px;
+    width: 1140px;
+    height: 544px;
+    object-fit: cover;
+    border-radius: 22px;
+}
+
+.project__flowers {
+    position: relative;
+}
+
+.project-flowers {
+    position: absolute;
+    top: -615px;
+    right: -50px;
+}
+
+.project-rope {
+    position: absolute;
+    top: -710px;
+    right: -50px;
+}
