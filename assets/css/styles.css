@@ -442,9 +442,121 @@ a {
     border-radius: 20px;
     background: #fff;
     box-shadow: -6px 9px 64px -4px rgba(118, 118, 118, 0.25);
-    transform: scale(1.05);
 }
 
 .services__item:hover .services-info {
     padding: 0 0 23px 18px;
+}
+/* ========================================== About ========================================== */
+.about {
+    margin-top: 160px;
+}
+
+.about-body {
+    display: flex;
+}
+
+.about__media {
+    margin-right: 64px;
+    position: relative;
+}
+
+.about__images {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 21px;
+    width: 591px;
+    height: 557px;
+}
+
+.about__images-img {
+    width: 284px;
+    height: 480px;
+    object-fit: cover;
+    border-radius: 210px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.about__images-title {
+    position: relative;
+}
+
+.about__images-info {
+    position: absolute;
+    bottom: -50px;
+    right: -65px;
+    cursor: pointer;
+}
+
+.about__images-img:hover {
+    transform: translateY(77px);
+}
+
+.about__flowers-bg {
+    position: absolute;
+    top: -32px;
+    left: 46px;
+}
+
+.about__flowers-rope {
+    position: absolute;
+    top: 12px;
+    left: 85px;
+}
+
+.about__heading,
+.about-item__heading {
+    margin-top: 20px;
+    color: #152427;
+    font-size: 4.2rem;
+    font-weight: 600;
+    line-height: 1.24;
+}
+
+.about__desc,
+.about-item__desc {
+    margin-top: 11px;
+    color: #7d8188;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.63; /* 162.5% */
+}
+
+.about-info {
+    margin-top: 36px;
+}
+
+.about-item {
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.about-item::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 485px;
+    height: 1px;
+    left: 0;
+    bottom: 0;
+    background: #83a17d;
+}
+
+.about-item:last-child {
+    margin-top: 38px;
+}
+
+.about-item__desc {
+    margin-top: 0;
+    font-size: 1.4rem;
+    width: 364px;
+}
+
+.about-item__heading {
+    margin-top: 0;
 }
