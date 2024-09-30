@@ -29,6 +29,43 @@ a {
     margin-right: auto;
 }
 
+.section-heading {
+    max-width: 520px;
+    color: #152427;
+    font-size: 4.2rem;
+    font-weight: 600;
+    line-height: 1.24;
+}
+
+.section-heading::after {
+    content: "";
+    position: relative;
+    margin-left: 16px;
+    display: inline-block;
+    width: 66px;
+    height: 2px;
+    top: -6px;
+    background: #152427;
+}
+
+.section-desc {
+    color: #152427;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.63;
+}
+
+.section-desc::before {
+    content: "";
+    position: relative;
+    margin-right: 16px;
+    display: inline-block;
+    width: 25px;
+    height: 1px;
+    top: -6px;
+    background: #152427;
+}
+
 /* ========================================== Header ========================================== */
 .header {
     margin: 28px 0 88px;
@@ -56,13 +93,14 @@ a {
     );
 }
 
-.logo {
+.logo a {
     display: flex;
     align-items: center;
     column-gap: 8px;
 }
 
 .logo__brand {
+    color: #143c3c;
     font-size: 2.4rem;
     font-weight: 500;
 }
@@ -326,4 +364,87 @@ a {
 
 .brand__link-heroku img {
     margin-right: 10px;
+}
+/* ========================================== Services ========================================== */
+.services {
+    margin-top: 106px;
+}
+
+.services-top {
+    margin-top: 12px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.services-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    color: #152427;
+    background: #e2eddf;
+    transition: 0.25s;
+}
+
+.services-cta:last-child {
+    rotate: 180deg;
+    margin-left: 17px;
+}
+
+.services-cta:hover {
+    color: #fff;
+    background: #143c3c;
+}
+
+.services__media {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 16px;
+    margin-top: 76px;
+}
+
+.services__item-img {
+    width: 370px;
+    height: 318px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.services-info__heading {
+    margin-top: 24px;
+    color: #152427;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.services-info {
+    transition: 0.25s;
+}
+
+.services-info__desc {
+    margin-top: 18px;
+    width: 268px;
+    color: #7d8188;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.71;
+}
+
+.services__item {
+    transition: 0.25s;
+}
+
+.services__item:hover {
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: -6px 9px 64px -4px rgba(118, 118, 118, 0.25);
+    transform: scale(1.05);
+}
+
+.services__item:hover .services-info {
+    padding: 0 0 23px 18px;
 }
